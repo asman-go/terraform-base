@@ -4,7 +4,7 @@ data "yandex_resourcemanager_cloud" "cloud" {
 
 data "yandex_resourcemanager_folder" "folder" {
   cloud_id = data.yandex_resourcemanager_cloud.cloud.id
-  name = var.folder
+  name     = var.folder
 }
 
 provider "yandex" {
